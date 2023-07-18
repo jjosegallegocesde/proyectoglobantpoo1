@@ -23,6 +23,17 @@ public class Usuario {
         this.correoElectronico = correoElectronico;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombres='" + nombres + '\'' +
+                ", documento='" + documento + '\'' +
+                ", ubicacion=" + ubicacion +
+                ", correoElectronico='" + correoElectronico + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
@@ -36,6 +47,7 @@ public class Usuario {
     }
 
     public void setNombres(String nombres) {
+
         this.nombres = nombres;
     }
 
